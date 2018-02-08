@@ -5,13 +5,16 @@
   "dependencies": {
     "breakpoint-sass": "^2.7.1",
     "breakpoints": "^0.0.0",
+    "markdown": "^0.5.0",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-medium-editor": "^1.8.1",
     "react-redux": "^5.0.6",
     "react-scripts": "1.1.0",
     "redux": "^3.7.2",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.2.0",
+    "to-markdown": "^3.1.1"
   },
   "scripts": {
     "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",

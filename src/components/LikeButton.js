@@ -20,20 +20,15 @@ class LikeButton extends PureComponent {
     return classes
   }
 
-  onChange() {
-    this.liked = !this.liked
+  toggleLike() {
   }
 
-  // toggleLike() {
-  //   this.props.onChange()
-  // }
-
   render() {
-    const { liked, onChange } = this.props
+    const { liked } = this.props
 
     return (
       <p className={ this.classNames() }>
-        <button onChange={onChange}>
+        <button>
           <img className="heart" alt="liked" src={ liked ? HeartRed : HeartGrey } />
           <span className="copy">
             <img className="heart" alt="not liked" src={ liked ? HeartRed : HeartGrey } />

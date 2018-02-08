@@ -27,15 +27,7 @@ const PLACEHOLDER = 'http://via.placeholder.com/500x180?text=No%20Image'
 class RecipeItem extends PureComponent {
   static propTypes = {
      ...recipeItemShape.isRequired,
-     updateRecipe: PropTypes.func.isRequired
    }
-
-   toggleLike = () => {
-     // console.log('Calling toggleLike inside RecipeItem!')
-     const { updateRecipe, _id, liked } = this.props
-     updateRecipe(_id, { liked: !liked })
-   }
-
 
   render() {
     const { title, summary, vegan, vegetarian, pescatarian, photo, liked } = this.props
